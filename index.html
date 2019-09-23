@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <img src="" alt="" class="header__logo">
-        <img src="" alt="" class="header__profile">
+        <div class="header__logo">
+            Toga
+        </div>
+        <img src="img/profile.png" alt="" class="header__profile">
     </header>
     <section class="busqueda">
-        <input type="text" class="busqueda">
+        <input type="text" class="busqueda__input" placeholder="Ej: Torta Chocolate">
     </section>
     <section class="food">
-        <h2 class="food__title">
-            desayuno
-        </h2>
+        <div class="food__title">
+            <h1>Hora del desayuno</h1>
+            <label>Que quieres comer hoy</label>
+        </div>
         <section class="food__kind">
-            <section class="food__kind__caliente">
+            <section class="food__kind__category">
                 <figure class="food__kind_img">
-                    <img src="" alt="comida caliente">
+                    <img src="img/categories/icons8-donut-128.png" alt="comida caliente">
                 </figure>
                 <p class="food__kind__subtitle">
                     hot
                 </p>
             </section>
-            <section class="food__kind__galletas">
+            <section class="food__kind__category">
                 <figure class="food__kind_img">
-                    <img src="" alt="galletas">
+                    <img src="img/categories/icons8-donut-160.png" alt="galletas">
                 </figure>
                 <p class="food__kind__subtitle">
                     galletas
                 </p>
             </section>
-            <section class="food__kind__coffe">
+            <section class="food__kind__category">
                 <figure class="food__kind_img">
-                    <img src="" alt="cafe">
+                    <img src="img/categories/icons8-donut-96.png" alt="cafe">
                 </figure>
                     <p class="food__kind__subtitle">
                         cafe
                     </p>
             </section>
-            <section class="food__kind__postres">
+            <section class="food__kind__category">
                 <figure class="food__kind_img">
-                    <img src="" alt="postres">
+                    <img src="img/categories/icons8-donut-98.png" alt="postres">
+                </figure>
+                <p class="food__kind__subtitle">
+                    postres
+                </p>
+            </section>
+            <section class="food__kind__category">
+                <figure class="food__kind_img">
+                    <img src="img/categories/icons8-cupcake-200.png" alt="postres">
                 </figure>
                 <p class="food__kind__subtitle">
                     postres
@@ -53,45 +66,83 @@
             </section>
         </section>
         <section class="food__scroll">
-            <article class="food__scroll__item">
+            <div class="food__scroll__item table">
+                <div class="corazon">
+                    <button>
+                        <img src="img/items/corazon.png" alt="" >
+                    </button>
+                </div>
                 <figure class="food__scroll__img">
-                    <img src="" alt="" class="food__img">
+                    <img src="img/items/plato-1.png" alt="" class="food__img">
                 </figure>
-                <p class="food__scroll_price">
-                </p>
-                <p class="food__scroll__title">
-                </p>
+                <div class="descripcion">
+                    <label class="food__scroll_price">
+                        $12.000
+                    </label>
+                    <label class="food__scroll__title">
+                        Pastel de Rollo
+                    </label>
+                    <label class="food__scroll__description">
+                        Descripcion del pastel de rollo
+                    </label>
+                </div>
                 <button class="food__scroll__buy">
+                    Comprar ingredientes
                 </button>
-                <button class="food_scroll_favIcon">
-                </button>
-            </article>
-            <article class="food__scroll__item">
+                <!--<button class="food_scroll_favIcon">
+                </button>-->
+            </div>
+
+            <div class="food__scroll__item table">
+                <div class="corazon">
+                    <button>
+                        <img src="img/items/corazon.png" alt="" >
+                    </button>
+                </div>
                 <figure class="food__scroll__img">
-                    <img src="" alt="" class="food__img">
+                    <img src="img/items/plato-1.png" alt="" class="food__img">
                 </figure>
-                <p class="food__scroll_price">
-                </p>
-                <p class="food__scroll__title">
-                </p>
+                <div class="descripcion">
+                    <label class="food__scroll_price">
+                        $12.000
+                    </label>
+                    <label class="food__scroll__title">
+                        Pastel de Rollo
+                    </label>
+                    <label class="food__scroll__description">
+                        Descripcion del pastel de rollo
+                    </label>
+                </div>
                 <button class="food__scroll__buy">
+                    Comprar ingredientes
                 </button>
-                <button class="food_scroll_favIcon">
-                </button>
-            </article>
-            <article class="food__scroll__item">
+            </div>
+
+            <div class="food__scroll__item table">
+                <div class="corazon">
+                    <button>
+                        <img src="img/items/corazon.png" alt="" >
+                    </button>
+                </div>
                 <figure class="food__scroll__img">
-                    <img src="" alt="" class="food__img">
+                    <img src="img/items/plato-1.png" alt="" class="food__img">
                 </figure>
-                <p class="food__scroll_price">
-                </p>
-                <p class="food__scroll__title">
-                </p>
+                <div class="descripcion">
+                    <label class="food__scroll_price">
+                        $12.000
+                    </label>
+                    <label class="food__scroll__title">
+                        Pastel de Rollo
+                    </label>
+                    <label class="food__scroll__description">
+                        Descripcion del pastel de rollo
+                    </label>
+                </div>
                 <button class="food__scroll__buy">
+                    Comprar ingredientes
                 </button>
-                <button class="food_scroll_favIcon">
-                </button>
-            </article>
+            </div>
+            
         </section>
     </section>
 </body>
