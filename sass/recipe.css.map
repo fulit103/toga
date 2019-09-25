@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAC;EACD,gBAAgB,ECDI,OAAO;EDE3B,IAAI,EAAE,IAAI,CELE,SAAS,EAAE,UAAU;EFMjC,MAAM,EAAE,GAAG;EACX,WAAW,EAAE,kBAAkB;CAAG;;AAEtC,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAAG;;AAG9B,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAAG",
+    "sources": [
+        "recipe.sass",
+        "0-base/_color.sass",
+        "0-base/_tipografy.sass"
+    ],
+    "names": [],
+    "file": "recipe.css"
+}

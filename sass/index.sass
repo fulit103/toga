@@ -1,6 +1,7 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #1f4dec
 $background-color: #f5fafc
+@import "0-base/_color"
 
 body
   font: 100% $font-stack
@@ -51,7 +52,7 @@ body
   .food__title
     margin-top: 20px
     width: 100%
-    h1 
+    h1
       margin: 0px
     label
       font-size: 12px
@@ -74,7 +75,7 @@ body
     flex-wrap: wrap
     justify-content: center
     align-items: center
-    figure 
+    figure
       margin: 0px
       width: 100px
       display: flex
@@ -89,7 +90,7 @@ body
 .food__scroll
   display: flex
   flex-wrap: nowrap
-  overflow-x: scroll  
+  overflow-x: scroll
   overflow-y: hidden
   justify-content: flex-start
   align-items: stretch
@@ -119,22 +120,20 @@ body
       padding-left: 10px 
       box-sizing: border-box
       padding-top: 10px
-      img 
+      img
         width: 30px
-        margin: 0px   
-        padding-top: 4px   
-        
-      button        
+        margin: 0px
+        padding-top: 4px
+
+      button
         border-radius: 25px
         width: 40px
         height: 40px
         background-color: red
         padding: 0px
-        margin: 0px        
+        margin: 0px
         outline: none
         border: none
-        
-        
 
     figure
       width: 230px
@@ -152,7 +151,7 @@ body
         text-align: center
 
       .food__scroll_price
-        color: #da9f9b
+        color: $background-color-img-1
         font-size: 18px
         font-weight: bold 
 

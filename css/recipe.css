@@ -1,0 +1,18 @@
+body {
+  background-color: #f5fafc;
+  font: 100% Helvetica, sans-serif;
+  margin: 0px;
+  font-family: "Muli", sans-serif;
+}
+
+.recipe__img {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe__pic {
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=recipe.css.map */
