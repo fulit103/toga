@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/style/App.scs';
+import '../assets/style/App.scss';
 
 const Primer = () => {
   <h1>revision</h1>
