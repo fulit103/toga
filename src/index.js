@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Primer from './component/App';
+import App from './container/App';
 
-
-ReactDOM.render(< Primer />,document.getElementById('App'));
+ReactDOM.render(<App />, document.getElementById('App'));
 
