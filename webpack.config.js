@@ -22,19 +22,28 @@ module.exports = {
       },
       {
         test: /\.(s*)css/,
-        use:[
+        use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
       {
         test: /\.html$/,
         use: {
           loader: 'html-loader',
         },
+      },
+      {
+        test: /\.(png|gif|jpg)$/,
+        use: [{
+          'loader': 'file-loader',
+          options: {
+            name: 'assets/[hash].[ext]',
+          },
+        }],
       },
     ],
   },
