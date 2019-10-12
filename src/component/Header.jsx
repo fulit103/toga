@@ -1,12 +1,13 @@
 import React from 'react';
 import '../assets/style/components/header.scss';
+import userIcon from '../assets/static/profile.png';
 
 const Header = () => (
   <header className='header'>
     <div className='header__logo'>
-            Toga
+        Toga
     </div>
-    <img src='img/profile.png' alt='profile' className='header__profile' />
+    <img src={userIcon} alt='profile' className='header__profile' />
   </header>
 );
 

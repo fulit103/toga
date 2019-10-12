@@ -1,0 +1,13 @@
+.notfound {
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tittle_error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

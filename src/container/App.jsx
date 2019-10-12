@@ -6,6 +6,7 @@ import Types from '../component/Types';
 import KindOfFood from '../component/KindOfFood';
 import FoodScroll from '../component/FoodScroll';
 import FoodScrollItem from '../component/FoodScrollItem';
+import NoFound from '../component/NoFound';
 import '../assets/style/App.scss';
 
 const App = () => (
