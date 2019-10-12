@@ -24,7 +24,8 @@
   "homepage": "https://github.com/fulit103/toga#readme",
   "dependencies": {
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
