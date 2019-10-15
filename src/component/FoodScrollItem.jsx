@@ -5,31 +5,35 @@ import '../assets/style/components/foodScrollItem.scss';
 import Like from '../assets/static/items/corazon.png';
 import Plato from '../assets/static/items/plato-1.png';
 
-const foodScrollItem = () => (
-  <div className='food__scroll__item table'>
-    <div className='corazon'>
-      <button>
-        <img src={Like} alt='Icon like' />
+const FoodScrollItem = (props) => {
+  const { title, price, description } = props;
+  return (
+    <div className='food__scroll__item table'>
+      <div className='corazon'>
+        <button>
+          <img src={Like} alt='Icon like' />
+        </button>
+      </div>
+      <figure className='food__scroll__img'>
+        <img src={Plato} alt='food' className='food__img' />
+      </figure>
+      <div className='descripcion'>
+        <label className='food__scroll_price'>
+          $
+          {price}
+        </label>
+        <label className='food__scroll__title'>
+          {title}
+        </label>
+        <label className='food__scroll__description'>
+          {description}
+        </label>
+      </div>
+      <button className='food__scroll__buy'>
+          Ver mas
       </button>
     </div>
-    <figure className='food__scroll__img'>
-      <img src={Plato} alt='food' className='food__img' />
-    </figure>
-    <div className='descripcion'>
-      <label className='food__scroll_price'>
-        $12.000
-      </label>
-      <label className='food__scroll__title'>
-        Pastel de Rollo
-      </label>
-      <label className='food__scroll__description'>
-        Descripcion del pastel de rollo
-      </label>
-    </div>
-    <button className='food__scroll__buy'>
-        Comprar ingredientes
-    </button>
-  </div>
-);
+  );
+};
 
-export default foodScrollItem;
+export default FoodScrollItem;
