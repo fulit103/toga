@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/style/components/foodScrollItem.scss';
 import Like from '../assets/static/items/corazon.png';
 import Plato from '../assets/static/items/plato-1.png';
@@ -29,9 +30,9 @@ const FoodScrollItem = (props) => {
           {description}
         </label>
       </div>
-      <button className='food__scroll__buy'>
+      <Link className='food__scroll__buy' to="/food">
           Ver mas
-      </button>
+      </Link>
     </div>
   );
 };
