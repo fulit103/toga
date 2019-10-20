@@ -1,38 +1,51 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import '../assets/style/components/foodPage.scss';
 import 'react-tabs/style/react-tabs.css';
 import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
+import pizza from '../assets/static/recipe/pizza.png';
 
-const FoodPage = props => {
+const FoodPage = (props) => {
   return (
     <>
       <div>
         <div>
-          <Link to="/">
+          <Link to='/'>
             Atras
           </Link>
         </div>
-        <div>
-          <div>
+        <div className= 'main__food'>
+          <img src={pizza} alt='Icon like' />
+        </div>
+        <div className='step_like'>
+          <div className='step_by_step'>
             <button>Paso a paso</button>
+          </div>
+          <div className="corazon">
             <button>
               <img src={Like} alt='Icon like' />
             </button>
           </div>
-          <div>
+        </div>
+        </div>
+          <div className='recipe' >
             <h1>Cacke Roll Set</h1>
             <label>two cake rols a cup of coffe a dount</label>
             <ReactStars
-            count={5}            
-            size={24} 
-            color2={'#ffd700'} />
+              count={5}
+              size={24}
+              color2='#ffd700'
+            />
           </div>
+        <div>
           <Tabs>
             <TabList>
-              <Tab>Title 1</Tab>
-              <Tab>Title 2</Tab>
+              <Tab>Ingredientes</Tab>
+              <Tab>intrucciones</Tab>
+              <Tab>Inf. nutricional</Tab>
             </TabList>
             <TabPanel>
               <h2>Any content 1</h2>
@@ -47,9 +60,8 @@ const FoodPage = props => {
             Comprar Ingredientes
           </button>
         </div>
-      </div>
     </>
   );
-}
+};
 
 export default FoodPage;

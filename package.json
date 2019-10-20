@@ -7,6 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/fulit103/toga#readme",
   "dependencies": {
+    "node-sass-chokidar": "^1.3.5",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",

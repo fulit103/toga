@@ -25,7 +25,7 @@ const Home = (props) => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     kinds: state.kinds,
     foods: state.foods,
