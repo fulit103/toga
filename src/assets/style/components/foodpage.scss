@@ -17,6 +17,10 @@
   margin-left: 15px;
 }
 
+.recipe_title h1{
+  margin-botton:4px;
+}
+
 .main__food img{
   width:100%;
   height:340px;
@@ -52,4 +56,17 @@ button {
   width: 30px;
   margin: 0px;
   padding-top: 4px;
+}
+
+li{
+  list-style:none;
+  margin-left: 0.6em;
+}
+
+.buttton-buy{
+  margin-top:0.6em;
+  margin-botton:0.5em;
+  display:grid;
+  justify-content:center;
+  width:100%;
 }

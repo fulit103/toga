@@ -32,30 +32,45 @@ const FoodPage = (props) => {
         </div>
         </div>
           <div className='recipe' >
-            <h1>pizza</h1>
-            <label>two cake rols a cup of coffe a dount</label>
+            <div className='recipe_title'>
+              <h1>Pizza</h1>
+            </div>
+            <label>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones.</label>
             <ReactStars
               count={5}
               size={24}
               color2='#ffd700'
             />
           </div>
-        <div>
+        <div className='inf-box'>
           <Tabs>
             <TabList>
               <Tab>Ingredientes</Tab>
-              <Tab>intrucciones</Tab>
+              <Tab>Instrucciones</Tab>
               <Tab>Inf. nutricional</Tab>
             </TabList>
             <TabPanel>
-              <h2>Any content 1</h2>
+              <li> 300 g de harina </li>
+              <li> 160 g de agua </li>
+              <li> 5 g de levadura de panadería instantánea </li>
+              <li> 20 g de aceite de oliva virgen extra </li>
+              <li> 1 cucharadita de sal </li>
+              <li> 200 g de salsa de tomate </li>
+              <li> 100 g de mozzarella </li>
+              <li> 100 g de jamón de york </li>
             </TabPanel>
             <TabPanel>
-              <h2>Any content 2</h2>
+              <p>En un bol ponemos todos los ingredientes de la masa: harina, agua, levadura, aceite y sal y mezclamos bien con una cuchara. Una masa de pizza es como un pan sencillo. Se puede hacer con cualquier tipo de harina y la cantidad de agua será aproximadamente de la mitad de la de harina. Si usamos una harina con más cantidad de gluten (harina de fuerza) entonces necesitaremos algo más de agua y si utilizamos una harina normal (como la de hoy) con la mitad de agua (por harina) y un poco más será suficienteEn un bol ponemos todos los ingredientes de la masa: harina, agua, levadura, aceite y sal y mezclamos bien con una cuchara. Una masa de pizza es como un pan sencillo. Se puede hacer con cualquier tipo de harina y la cantidad de agua será aproximadamente de la mitad de la de harina. Si usamos una harina con más cantidad de gluten (harina de fuerza) entonces necesitaremos algo más de agua y si utilizamos una harina normal (como la de hoy) con la mitad de agua (por harina) y un poco más será suficiente </p>
+            </TabPanel>
+            <TabPanel>
+              <li> 11,21 gramos de proteina </li>
+              <li> 15,20 gramos de grasa </li>
+              <li> 28,5 gramos de carbohidratos </li>
+              <li> 2,2 gramos de fibra </li>
             </TabPanel>
           </Tabs>
         </div>
-        <div>
+        <div className='buttton-buy' >
           <button>
             Comprar Ingredientes
           </button>
