@@ -32,7 +32,7 @@ const FoodPage = (props) => {
         </div>
         </div>
           <div className='recipe' >
-            <h1>Cacke Roll Set</h1>
+            <h1>pizza</h1>
             <label>two cake rols a cup of coffe a dount</label>
             <ReactStars
               count={5}
