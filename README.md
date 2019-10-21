@@ -1,15 +1,14 @@
 # Toga - FoodMarket
 
-Proyecto de la Escuela de JavaScript - Platzi 2019
+Proyecto de la Escuela de JavaScript - Platzi 2019.
 
-Utilizando 
-
+FoodMarket es un espacio para gustosos por la gastronomía pero que no tienen tiempo para comprar los productos para sus preparaciones. 
 
 ## Enlaces 🚀
 
-  **Proyecto en vivo:** https://toga.now.sh/
-  **Tablero Tareas:** https://trello.com/b/DclGrqZ0
-  **Documentación:** https://bit.ly/35RrVt7
+ * **Proyecto en vivo:** https://toga.now.sh/
+ * **Tablero Tareas:** https://trello.com/b/DclGrqZ0
+ * **Documentación:** https://bit.ly/35RrVt7
 
 ### Instalación 🔧
 
@@ -17,6 +16,12 @@ Instalación
 
 ```
 npm install
+```
+
+ejecución
+
+```
+npm run start
 ```
 
 ## Construido con 🛠️
@@ -29,8 +34,6 @@ Las herramientas que se utilizaro fueron
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
 * **Julian David Toro** - [fulit103](https://github.com/fulit103)
 * **César Galindo** - [chestergalindo](https://github.com/chestergalindo)
 
@@ -42,5 +45,3 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 * Invita una cerveza 🍺 a alguien del equipo. 
 * Da las gracias públicamente 🤓.
 
----
-😊
