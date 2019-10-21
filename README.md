@@ -4,13 +4,13 @@ Proyecto de la Escuela de JavaScript - Platzi 2019.
 
 FoodMarket es un espacio para gustosos por la gastronomía pero que no tienen tiempo para comprar los productos para sus preparaciones. 
 
-## Enlaces 🚀
+### Enlaces 🚀
 
  * **Proyecto en vivo:** https://toga.now.sh/
  * **Tablero Tareas:** https://trello.com/b/DclGrqZ0
  * **Documentación:** https://bit.ly/35RrVt7
 
-## Instalación 🔧
+### Instalación 🔧
 
 Instalación
 
@@ -24,7 +24,7 @@ ejecución
 npm run start
 ```
 
-## Construido con 🛠️
+### Construido con 🛠️
 
 Las herramientas que se utilizaro fueron
 
@@ -32,14 +32,14 @@ Las herramientas que se utilizaro fueron
   * Redux
   * Backend: Nodejs
 
-## Autores ✒️
+### Autores ✒️
 
 * **Julian David Toro** - [fulit103](https://github.com/fulit103)
 * **César Galindo** - [chestergalindo](https://github.com/chestergalindo)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/fulit103/toga/graphs/contributors) quíenes han participado en este proyecto. 
 
-## Expresiones de Gratitud 🎁
+### Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 a alguien del equipo. 
