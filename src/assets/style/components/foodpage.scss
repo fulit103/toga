@@ -1,5 +1,26 @@
 @import '../Vars.scss';
 
+.container_recipe{
+  display: grid;
+  grid-template-rows: 250px  285px  160px ;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 'picture' 'title' 'instructions';
+}
+.picture{
+  grid-area: picture;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  grid-area: title;
+}
+
+.instructions{
+  margin-top: -27px;
+  height: 120px;
+}
+
 .step_like{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -15,6 +36,12 @@
 .recipe{
   margin-top:75px;
   margin-left: 15px;
+}
+
+.recipe_title h1{
+  margin-bottom:4px;
+  display: flex;
+  justify-content: center;
 }
 
 .main__food img{
@@ -52,4 +79,97 @@ button {
   width: 30px;
   margin: 0px;
   padding-top: 4px;
+}
+
+li{
+  list-style:none;
+  margin-left: 0.6em;
+  display: list-item;
+}
+
+.button-buy{
+  margin-top:1em;
+  margin-bottom:0.5em;
+  display:grid;
+  justify-content:center;
+  width:100%;
+  // position: absolute;
+  // z-index: 4;
+  // left: -25px;
+  // top: 536px;
+}
+
+.stars{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.instructions p,
+.instructions  li{
+  margin: 7px 25px;
+}
+
+@media  screen and (min-width: 440px) {
+  .container_recipe{
+    display: grid;
+    grid-template-rows: 567px 250px 160px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'picture' 'title' 'instructions';
+  }
+  .main__food img{
+    width:630px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .instructions{
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .main__food img{
+    width:600px;
+    height: 600px;
+  }
+}
+
+@media  screen and (min-width: 1024px) {
+  .container_recipe{
+    display: grid;
+    grid-template-rows: 550px ;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'title' 'instructions' 'picture' ;
+  }
+
+  label{
+    width: 500px;
+  }
+
+  .recipe{
+    position: relative;
+    z-index: 4;
+    top: -150px;
+    left: 35px;
+    width: 468px;
+  }
+
+  .main__food img{
+    width:624px;
+    height: 624px;
+  }
+
+  .instructions{
+    position: relative;
+    z-index: 3;
+    top: -240px;
+    left: 32px;
+    width: 468px;
+  }
 }
