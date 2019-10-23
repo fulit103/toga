@@ -10,6 +10,7 @@ FoodMarket es un espacio para gustosos por la gastronomía pero que no tienen ti
  * **Tablero Tareas:** https://trello.com/b/DclGrqZ0
  * **Documentación:** https://bit.ly/35RrVt7
  * **Matriz de Priorización:** https://bit.ly/2PgC0d4
+ * **Landing Page** https://juliantoro.co/toga/
 
 ### Instalación 🔧
 
