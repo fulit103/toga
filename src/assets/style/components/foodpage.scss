@@ -9,6 +9,8 @@
 }
 .picture{
   grid-area: picture;
+  display: flex;
+  justify-content: center;
 }
 .title{
   grid-area: title;
@@ -82,6 +84,7 @@ button {
 li{
   list-style:none;
   margin-left: 0.6em;
+  display: list-item;
 }
 
 .button-buy{
@@ -111,14 +114,14 @@ li{
 @media  screen and (min-width: 440px) {
   .container_recipe{
     display: grid;
-    grid-template-rows: 700px  250px  160px ;
+    grid-template-rows: 567px 250px 160px;
     justify-content: center;
     align-items: center;
     grid-template-areas: 'picture' 'title' 'instructions';
   }
   .main__food img{
-    width:750px;
-    height: 750px;
+    width:630px;
+    height: 630px;
     display: flex;
     justify-content: center;
   }
@@ -126,10 +129,16 @@ li{
   .instructions{
     width: 750px;
   }
-
 }
 
-@media  screen and (min-width: 1000px) {
+@media screen and (min-width: 765px) {
+  .main__food img{
+    width:600px;
+    height: 600px;
+  }
+}
+
+@media  screen and (min-width: 1024px) {
   .container_recipe{
     display: grid;
     grid-template-rows: 550px ;
@@ -147,8 +156,8 @@ li{
     position: relative;
     z-index: 4;
     top: -150px;
-    left: 76px;
-    width: 536px;
+    left: 35px;
+    width: 468px;
   }
 
   .main__food img{
@@ -160,8 +169,7 @@ li{
     position: relative;
     z-index: 3;
     top: -240px;
-    left: 71px;
+    left: 32px;
     width: 468px;
   }
-
 }
