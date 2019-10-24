@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from '../container/Home';
-import Login from '../container/Login';
-import Register from '../container/Register';
-import NoFound from '../container/NoFound';
+import Home from '../containers/Home';
+import Login from '../containers/Login';
+import Register from '../containers/Register';
+import NoFound from '../containers/NoFound';
 import Layout from '../component/Layout';
-import FoodPage from '../container/FoodPage';
+import FoodPage from '../containers/FoodPage';
 
 const App = () => (
   <BrowserRouter>
