@@ -2,8 +2,7 @@ import React from 'react';
 import Header from './Header';
 
 const Layout = ({ children }) => (
-  <div className='App'>
-    <Header />
+  <div className='App'>    
     {children}
   </div>
 );
