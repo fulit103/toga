@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // eslint-disable-next-line import/no-unresolved
-import '../assets/style/components/foodPage.scss';
+import '../assets/style/components/foodpage.scss';
 import 'react-tabs/style/react-tabs.css';
 import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
