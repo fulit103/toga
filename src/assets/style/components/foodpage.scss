@@ -1,6 +1,135 @@
 @import '../Vars.scss';
 
+.button-primary {
+  box-sizing: border-box;
+  background-color: #1f4dec;
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 15px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .container_recipe{
+  background-color: #f8e7e9;
+
+  width: 100%;
+  align-self: center;
+  
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh);
+  box-sizing: border-box;
+  
+
+  .container_recipe__header{
+
+    position: relative;
+
+    .container_recipe__back{      
+      float: left; 
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    
+    .main__food{
+      background-color:#f8e7e9;
+    }
+
+    .step_like{
+      margin-top: -23px;
+      position: absolute;
+      width: 100%;      
+      display:flex;
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+      
+
+      .corazon button{
+        
+        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        padding: 0px;
+        margin: 0px 50px 0px 10px;
+        outline: none;
+        border: none;        
+      }
+      
+      .corazon img {
+        width: 30px;
+        margin: 0px;
+        padding-top: 4px;
+      }
+
+      .step-by-step button{
+        background-color: #50d0e3;
+      }
+    }
+  }
+
+  
+
+  .food-info{
+    padding:  10px 25px;
+
+    align-self: center;
+  
+
+    display:flex;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+    background-color: #f5fafc;
+    
+
+    .recipe_title{
+      margin-bottom: 15px;
+    }
+
+    .div-button-buy{
+      margin-top:20px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 765px) {
+  .main__food img{
+    width:600px;
+    height: 600px;
+  }
+
+  .container_recipe{
+    flex-direction: row;
+    background-color: #f5fafc;
+  }
+
+  .container_recipe__back{
+    display:none;
+  }
+
+  .main__food{    
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .food-info{
+    margin: 70px;
+    border-radius: none;
+  }
+}
+
+
+/*.container_recipe{
   display: grid;
   grid-template-rows: 250px  285px  160px ;
   justify-content: center;
@@ -172,4 +301,4 @@ li{
     left: 32px;
     width: 468px;
   }
-}
+}*/

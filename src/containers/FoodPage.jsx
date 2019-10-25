@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // eslint-disable-next-line import/no-unresolved
-import '../assets/style/components/foodPage.scss';
+import '../assets/style/components/foodpage.scss';
 import 'react-tabs/style/react-tabs.css';
 import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
@@ -13,50 +13,50 @@ import pizza from '../assets/static/recipe/pizza.png';
 const FoodPage = (props) => {
   return (
     <div className='container_recipe'>
-      <div>
-        <div>
+      <div className='container_recipe__header' >
+        <div className='container_recipe__back'>
           <Link to='/'>
             Atras
           </Link>
         </div>
         <div className='main__food  picture'>
-          <img src={pizza} alt='pic_recipe' />
+          <img src={pizza} alt='pic_recipe' width='80%' />
         </div>
         <div className='step_like'>
-          <div className='step_by_step'>
-            <button>Paso a paso</button>
-          </div>
+
           <div className='corazon'>
             <button>
               <img src={Like} alt='Icon like' />
             </button>
           </div>
+
+          <div className='step-by-step'>
+            <button type='button' className='button-primary'>Paso a paso</button>
+          </div>
+          
         </div>
       </div>
-      <div className='recipe title'>
+      <div className='food-info'>
         <div className='recipe_title'>
-          <h1>Pizza</h1>
+          <div className='recipe_title'>
+            <h1>Pizza</h1>
+          </div>
+          <label>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones.</label>
+          <ReactStars
+            className='stars'
+            count={5}
+            size={24}
+            color2='#ffd700'
+          />
+          
         </div>
-        <label>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones.</label>
-        <ReactStars
-          className='stars'
-          count={5}
-          size={24}
-          color2='#ffd700'
-        />
-        <div className='button-buy'>
-          <button>
-            Comprar Ingredientes
-          </button>
-        </div>
-      </div>
-      <div>
+        
         <div className='inf-box instructions'>
           <Tabs>
             <TabList>
               <Tab>Ingredientes</Tab>
               <Tab>Instrucciones</Tab>
-              <Tab>Inf. nutricional</Tab>
+              <Tab>Inf. Nutricional</Tab>
             </TabList>
             <TabPanel>
               <li> 300 g de harina </li>
@@ -78,6 +78,12 @@ const FoodPage = (props) => {
               <li> 2,2 gramos de fibra </li>
             </TabPanel>
           </Tabs>
+        </div>
+
+        <div className='div-button-buy'>
+          <button className='button-primary'>
+            Comprar Ingredientes
+          </button>
         </div>
       </div>
     </div>
