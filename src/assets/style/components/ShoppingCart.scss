@@ -1,0 +1,113 @@
+@import '../Vars.scss';
+
+.screen{
+  background-color: #e4ecf8;
+  font-size: 1em;
+  height: 100vh;
+}
+.order__title{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 3.8em;
+}
+
+.Arrow__back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2{
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+h2{
+  justify-content: center;
+}
+
+.order__list_numerpeople{
+  display: flex;
+  justify-content: space-around;
+}
+
+.add__people{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  display:flex;
+  justify-content: space-around;
+  margin: 0.7em;
+}
+
+.pic__item{
+  display: flex;
+  align-items: center;
+}
+
+.pic__item img{
+  background-color: #da9f9b;
+  height: 3.5em;
+  width: 3.5em;
+  margin-right: 1em;
+  border-radius: 15%;
+}
+
+.total__items{
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__want{
+  display: flex;
+  justify-content: center;
+}
+
+.button__buy{
+  box-sizing: border-box;
+  background-color: $color-background-button;
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 15px;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width:640px) {
+  .button__buy{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:765px) {
+  .order__title{
+    padding-left: 5em;
+  }
+  .Arrow__back{
+    display: none;
+  }
+}
+
+@media screen and (min-width:1080px) {
+  .button__buy{
+    width: 30%;
+  }
+}
