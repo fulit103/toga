@@ -1,7 +1,7 @@
 @import '../Vars.scss';
 
 .screen{
-  background-color: #e4ecf8;
+  background-color: $color-background-button-th;
   font-size: 1em;
   height: 100vh;
 }
@@ -55,7 +55,7 @@ h2{
 }
 
 .pic__item img{
-  background-color: #da9f9b;
+  background-color: $color-background-pic-second;
   height: 3.5em;
   width: 3.5em;
   margin-right: 1em;
@@ -75,7 +75,7 @@ h2{
 .button__buy{
   box-sizing: border-box;
   background-color: $color-background-button;
-  color: white;
+  color: $color-letter;
   height: 40px;
   border: none;
   border-radius: 20px;

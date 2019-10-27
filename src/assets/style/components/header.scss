@@ -1,3 +1,5 @@
+@import '../Vars.scss';
+
 .header {
     height: 60px;
     box-sizing: border-box;
@@ -17,6 +19,6 @@
       height: 40px;
       border: 1px solid black;
       border-radius: 15px;
-      background-color: white;
+      background-color: $color-letter;
       overflow: hidden;
     }

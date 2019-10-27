@@ -1,3 +1,4 @@
+@import '../Vars.scss';
 
 .food__scroll .food__scroll__item {
   width: 230px;
@@ -28,7 +29,7 @@
   border-radius: 25px;
   width: 40px;
   height: 40px;
-  background-color: red;
+  background-color:$color-background-like;
   padding: 0px;
   margin: 0px;
   outline: none;
@@ -51,7 +52,7 @@
   text-align: center;
 }
 .food__scroll .food__scroll__item .descripcion .food__scroll_price {
-  color: #da9f9b;
+  color: $color-background-pic-second;
   font-size: 18px;
   font-weight: bold;
 }
@@ -65,8 +66,8 @@
 }
 .food__scroll .food__scroll__item .food__scroll__buy {
   box-sizing: border-box;
-  background-color: #1f4dec;
-  color: white;
+  background-color: $color-background-button;
+  color: $color-letter;
   height: 40px;
   border: none;
   border-radius: 20px;
@@ -80,8 +81,8 @@
 }
 
 .food__scroll .table:nth-child(2n) {
-  background-color: #f8e7e9;
+  background-color: $color-background-pic;
 }
 .food__scroll .table:nth-child(2n-1) {
-  background-color: #e4ecf8;
+  background-color: $color-background-button-th;
 }
