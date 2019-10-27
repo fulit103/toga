@@ -6,6 +6,7 @@ import Register from '../containers/Register';
 import NoFound from '../containers/NoFound';
 import Layout from '../component/Layout';
 import FoodPage from '../containers/FoodPage';
+import PageAddress from '../containers/PageAddress';
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/food' component={FoodPage} />
+        <Route exact path='/address' component={PageAddress} />
         <Route component={NoFound} />
       </Switch>
     </Layout>
