@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../containers/Home';
@@ -7,6 +8,8 @@ import NoFound from '../containers/NoFound';
 import Layout from '../component/Layout';
 import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
+import ShoppingCart from '../component/ShoppingCart';
+import Step from '../component/Step';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +20,8 @@ const App = () => (
         <Route exact path='/register' component={Register} />
         <Route exact path='/food' component={FoodPage} />
         <Route exact path='/address' component={PageAddress} />
+        <Route exact path='/shop' component={ShoppingCart} />
+        <Route exact path='/step' component={Step} />
         <Route component={NoFound} />
       </Switch>
     </Layout>
