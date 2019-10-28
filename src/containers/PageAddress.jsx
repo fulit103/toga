@@ -13,7 +13,7 @@ export class PageAddress extends Component {
     return (
       <div className='map-container-address'>
         <div className='header'>
-          <Link to='/food' className='atras'>
+          <Link to='/shop' className='atras'>
             Atras
           </Link>
           <input className='address-input' type='text' placeholder='tu direccion'></input>
