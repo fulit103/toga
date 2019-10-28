@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/fulit103/toga#readme",
   "dependencies": {
+    "google-maps-react": "^2.0.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
