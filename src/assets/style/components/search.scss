@@ -1,3 +1,5 @@
+@import '../Vars.scss';
+
 .busqueda {
   display: flex;
   box-sizing: border-box;
@@ -11,6 +13,6 @@
   padding: 10px;
   box-sizing: border-box;
   outline: none;
-  border: 2px solid white;
+  border: 2px solid $color-letter;
   font-family: "Muli", sans-serif;
 }

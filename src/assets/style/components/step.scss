@@ -1,0 +1,27 @@
+.instruction__pic img {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width:600px) {
+  .instruction__pic img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .instruction__pic  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruction{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+}
+

@@ -9,14 +9,15 @@ import 'react-tabs/style/react-tabs.css';
 import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
 import pizza from '../assets/static/recipe/pizza.png';
+import back from '../assets/static/items/back.png';
 
 const FoodPage = (props) => {
   return (
     <div className='container_recipe'>
-      <div className='container_recipe__header' >
+      <div className='container_recipe__header'>
         <div className='container_recipe__back'>
           <Link to='/'>
-            Atras
+            <img src={back} alt='' />
           </Link>
         </div>
         <div className='main__food  picture'>
@@ -33,7 +34,7 @@ const FoodPage = (props) => {
           <div className='step-by-step'>
             <button type='button' className='button-primary'>Paso a paso</button>
           </div>
-          
+
         </div>
       </div>
       <div className='food-info'>
@@ -48,9 +49,8 @@ const FoodPage = (props) => {
             size={24}
             color2='#ffd700'
           />
-          
         </div>
-        
+
         <div className='inf-box instructions'>
           <Tabs>
             <TabList>
@@ -81,9 +81,11 @@ const FoodPage = (props) => {
         </div>
 
         <div className='div-button-buy'>
-          <button className='button-primary'>
-            Comprar Ingredientes
-          </button>
+          <Link to='/shop'>
+            <button className='button-primary'>
+              Comprar Ingredientes
+            </button>
+          </Link>
         </div>
       </div>
     </div>
