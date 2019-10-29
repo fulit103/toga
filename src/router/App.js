@@ -10,6 +10,7 @@ import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
 import ShoppingCart from '../component/ShoppingCart';
 import Step from '../component/Step';
+import footer from '../component/FooterMovil.jsx';
 
 const App = () => (
   <BrowserRouter>
@@ -19,9 +20,10 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/food' component={FoodPage} />
-        <Route exact path='/address' component={PageAddress} />
+        <Route exact path='/adress' component={PageAddress} />
         <Route exact path='/shop' component={ShoppingCart} />
         <Route exact path='/step' component={Step} />
+        <Route exact path='/footer' component={footer} />
         <Route component={NoFound} />
       </Switch>
     </Layout>
