@@ -1,5 +1,11 @@
 @import '../Vars.scss';
 
+// .body{
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
+// }
+
 .button-primary {
   box-sizing: border-box;
   background-color: $color-background-button;
@@ -109,7 +115,6 @@
 
   .container_recipe{
     flex-direction: row;
-    background-color: $color-background-general;
   }
 
   .container_recipe__back{
