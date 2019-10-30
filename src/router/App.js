@@ -10,7 +10,6 @@ import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
 import ShoppingCart from '../component/ShoppingCart';
 import Step from '../component/Step';
-import footer from '../component/FooterMovil.jsx';
 import pay from '../component/CreditCard.jsx';
 
 const App = () => (
@@ -24,7 +23,6 @@ const App = () => (
         <Route exact path='/adress' component={PageAddress} />
         <Route exact path='/shop' component={ShoppingCart} />
         <Route exact path='/step' component={Step} />
-        <Route exact path='/footer' component={footer} />
         <Route exact path='/pay' component={pay} />
         <Route component={NoFound} />
       </Switch>

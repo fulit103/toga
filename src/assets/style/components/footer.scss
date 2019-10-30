@@ -13,3 +13,9 @@
   border-radius: 10%;
   border: solid black 2px;
 }
+
+@media screen and (min-width:760px){
+  .foot{
+    display: none;
+  }
+}
