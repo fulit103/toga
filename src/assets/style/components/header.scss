@@ -3,10 +3,10 @@
 .header {
     height: 60px;
     box-sizing: border-box;
-    display: flex;
     padding: 10px 15px;
     justify-content: space-between;
     align-items: center;
+    display:none;
 }
 
     .header__logo {
@@ -22,3 +22,10 @@
       background-color: $color-letter;
       overflow: hidden;
     }
+
+
+@media screen and (min-with:765px){
+ .header {
+    display: flex;
+    }
+}
