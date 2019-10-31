@@ -1,0 +1,21 @@
+@import '../Vars.scss';
+
+.foot{
+  background-color: $color-background-button-second;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  align-content: center;
+  height: 3em;
+}
+
+.pic {
+  border-radius: 10%;
+  border: solid black 2px;
+}
+
+@media screen and (min-width:760px){
+  .foot{
+    display: none;
+  }
+}

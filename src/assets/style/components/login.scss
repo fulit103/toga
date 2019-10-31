@@ -1,14 +1,17 @@
+@import '../Vars.scss';
+
 .login {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 0px 30px;
+  background-color: $color-background-pic-second;
   min-height: calc(100vh - 200px); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
 }
 
 .login__container {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.01);
   border: 2px solid black;
   border-radius: 40px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

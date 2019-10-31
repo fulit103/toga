@@ -7,24 +7,19 @@ import back from '../assets/static/items/back.png';
 import plus from '../assets/static/items/plus.png';
 import less from '../assets/static/items/less.png';
 import Plato from '../assets/static/items/plato-1.png';
-
 import { withRouter } from 'react-router-dom';
 
-
 class ShoppingCart extends React.Component {
-
   constructor(props, context) {
     super(props, context)
-
   }
 
-  redirectToAddress(){
-    console.log("address");
-    this.props.history.push("/address");
+  redirectToAddress() {
+    console.log('address');
+    this.props.history.push('/adress');
   }
 
-  render(){
-    
+  render() {
     return (
       <div className='screen'>
         <div className='order__title'>
@@ -38,7 +33,6 @@ class ShoppingCart extends React.Component {
           </div>
         </div>
         <div className='orden__list'>
-          
           <div className='order__list_numerpeople'>
             <div className='personas'>
               <p># de Personas</p>
@@ -124,9 +118,8 @@ class ShoppingCart extends React.Component {
           </button>
         </div>
       </div>
-    )
+    );
   }
-  
 };
 
 export default withRouter(ShoppingCart);

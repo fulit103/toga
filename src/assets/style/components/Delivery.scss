@@ -1,0 +1,85 @@
+.map-container-address{
+  box-sizing: border-box;
+  
+  .header{
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    width: 100%;    
+    padding: 0px;
+    opacity:1;
+    display: flex;
+    flex-wrap: wrap;
+    .address-input{
+      margin: 20px;
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+    .atras{
+      margin-left: 20px;
+      margin-top:20px
+    }
+  }
+
+  .footer{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .button-primary {
+      box-sizing: border-box;
+      background-color: #1f4dec;
+      color: white;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      padding: 0px 15px;
+      padding-top:10px;
+      outline: none;
+      font-size: 14px;
+      font-weight: bold;
+      width: 80%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none;
+    }
+  }
+}
+
+.box__information{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 95px;
+  width: 80%;
+  height: 110px;
+  z-index: 1;
+  left:35px;
+}
+
+p,
+h5{
+  margin: 10px 0px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.entertime,
+.travel{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
