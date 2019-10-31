@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/style/components/CreditCard.scss';
 
 const CreditCard = () => {
@@ -22,9 +23,15 @@ const CreditCard = () => {
             <div>12/24</div>
           </div>
         </div>
-
       </div>
-
+      <div className='form'>
+        <input type='number' name='' id='' placeholder='nùmero' />
+        <input type='text' name='' id='' placeholder='nombre' />
+        <input type='date' name='' id='' placeholder='fecha de expiraciòn' />
+      </div>
+      <Link to='/delivery' className='button_pay'>
+            pagar
+      </Link>
     </div>
   );
 };

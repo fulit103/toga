@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 import { Link } from 'react-router-dom';
-import '../assets/style/components/pageaddress.scss';
+import '../assets/style/components/Delivery.scss';
 
 const mapStyles = {
   width: '100%',
@@ -16,11 +16,20 @@ export class PageAddress extends Component {
           <Link to='/shop' className='atras'>
             Atras
           </Link>
-          <input className='address-input' type='text' placeholder='tu direccion' />
+        </div>
+        <div className='box__information'>
+          <div className='entertime'>
+            <h5>23:34</h5>
+            <p>tiempo de entrega</p>
+          </div>
+          <div className='travel'>
+            <h5>5 km</h5>
+            <p>recorrido</p>
+          </div>
         </div>
         <div className='footer'>
-          <Link to='/pay' className='button-primary'>
-            Siguiente
+          <Link to='/' className='button-primary'>
+            recibido
           </Link>
         </div>
         <Map
@@ -29,8 +38,8 @@ export class PageAddress extends Component {
           zoom={14}
           style={mapStyles}
           initialCenter={{
-            lat: -1.2884,
-            lng: 36.8233,
+            lat: 4.6097100,
+            lng: -74.0817500,
           }}
 
           fullscreenControl={false}
@@ -48,4 +57,3 @@ export class PageAddress extends Component {
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCmjvkXB_DMnBUNwxQztLMStyQmA_szbNw',
 })(PageAddress);
-

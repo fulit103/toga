@@ -10,7 +10,8 @@ import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
 import ShoppingCart from '../component/ShoppingCart';
 import Step from '../component/Step';
-import pay from '../component/CreditCard.jsx';
+import pay from '../component/CreditCard';
+import Delivery from '../containers/Delivery';
 
 const App = () => (
   <BrowserRouter>
@@ -24,6 +25,7 @@ const App = () => (
         <Route exact path='/shop' component={ShoppingCart} />
         <Route exact path='/step' component={Step} />
         <Route exact path='/pay' component={pay} />
+        <Route exact path='/delivery' component={Delivery} />
         <Route component={NoFound} />
       </Switch>
     </Layout>
