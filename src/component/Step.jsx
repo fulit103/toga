@@ -7,16 +7,16 @@ import pizza from '../assets/static/recipe/pizza.png';
 const Step = () => {
   return (
     <div className='container'>
-      <div className='header'>
+      <div className='header_recipe'>
         <div className='Arrow__back'>
           <Link to='/food'>
-            <img src={back} alt='' />
+            <img src={back} className='atras' alt='' />
           </Link>
         </div>
         <div className='step__step'>
           <h3> 8 de 10 </h3>
         </div>
-        <div>
+        <div className='ingredients'>
           <h4>Ingredientes </h4>
         </div>
       </div>

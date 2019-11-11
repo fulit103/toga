@@ -9,9 +9,27 @@
   height: 100vh;
 }
 
+.header_recipe {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.ingredients,
+.step__step,
+.Arrow__back{
+  display: flex;
+  align-items: center;
+}
+
+.ingredients{
+  align-items: flex-end;
+}
+
+
+
 .instruction__pic img {
-  width: 50%;
-  height: 60%;
+  width: 200px;
+  height: 200px;
 }
 
 @media screen and (min-width:600px) {
@@ -19,6 +37,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .instruction__pic img {
+    width: 50%;
+    height: 60%;
   }
 
   .instruction__pic  {
