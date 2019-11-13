@@ -8,28 +8,35 @@ import FoodScroll from '../component/FoodScroll';
 import FoodScrollItem from '../component/FoodScrollItem';
 import '../assets/style/App.scss';
 
-const Home = (props) => {
-  const { kinds, foods } = props;
+class Home extends Component {
+// const Home = (props) => {
+  // const { kinds, foods } = props;
+ponerNombres = () => {
+  return this.props.kinds.map((kinds) => (
+    <KindOfFood key={item.id} />
+  ));
+};
+
+render() {
   return (
     <>
       <Search />
       <Categories>
         <Types>
-          { kinds.map((item) => <KindOfFood key={item.id} {...item} />)}
+          {this.ponerNombres()}
         </Types>
-        <FoodScroll>
-          { foods.map((item) => <FoodScrollItem key={item.id} {...item} />)}
-        </FoodScroll>
+        {/* // <FoodScroll>
+          //   { foods.map((item) => <FoodScrollItem key={item.id} {...item} />)}
+          // </FoodScroll> */}
       </Categories>
     </>
   );
+  // };
+}
 };
 
-const mapStateToProps = (state) => {
-  return {
-    kinds: state.kinds,
-    foods: state.foods,
-  };
+const mapStateToProps = (reducers) => {
+  return reducer.KindReducer;
 };
 
 export default connect(mapStateToProps, null)(Home);
