@@ -1,0 +1,1 @@
+export const SET_FOOD_SELECTED = 'SET_FOOD_SELECTED';
