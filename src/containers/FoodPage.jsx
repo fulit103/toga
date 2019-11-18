@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // eslint-disable-next-line import/no-unresolved
 import '../assets/style/components/foodpage.scss';
@@ -11,7 +11,14 @@ import Like from '../assets/static/items/corazon.png';
 import pizza from '../assets/static/recipe/pizza.png';
 import back from '../assets/static/items/back.png';
 
+
 const FoodPage = (props) => {
+  let history = useHistory();
+
+  const handlerClick = () => {
+    history.push(`/food/1/shop`)
+  }
+
   return (
     <div className='body'>
       <div className='container_recipe'>
@@ -86,11 +93,11 @@ const FoodPage = (props) => {
           </div>
 
           <div className='div-button-buy'>
-            <Link to='/shop'>
-              <button className='button-primary'>
+            
+            <button className='button-primary' onClick={()=>handlerClick()}>
               Comprar Ingredientes
-              </button>
-            </Link>
+            </button>
+            
           </div>
         </div>
       </div>

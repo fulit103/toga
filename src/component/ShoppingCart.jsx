@@ -16,7 +16,7 @@ class ShoppingCart extends React.Component {
 
   redirectToAddress() {
     console.log('address');
-    this.props.history.push('/adress');
+    this.props.history.push('/address');
   }
 
   render() {
@@ -113,7 +113,7 @@ class ShoppingCart extends React.Component {
           </div>
         </div>
         <div className='button__want'>
-          <button className='button__buy' onClick={this.redirectToAddress.bind(this)}>
+          <button className='button__buy' onClick={ ()=>this.redirectToAddress() }>
             ¡Lo quiero!
           </button>
         </div>

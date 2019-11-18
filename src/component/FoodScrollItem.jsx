@@ -1,12 +1,19 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../assets/style/components/foodScrollItem.scss';
 import Like from '../assets/static/items/corazon.png';
 import Plato from '../assets/static/items/plato-1.png';
 
 const FoodScrollItem = (props) => {
+
+  let history = useHistory();
+
+  const handlerClick = () => {
+    history.push(`/food/${props.id}`);
+  };
+
   const { title, price, description } = props;
   return (
     <div className='food__scroll__item table'>
@@ -30,9 +37,9 @@ const FoodScrollItem = (props) => {
           {description}
         </label>
       </div>
-      <Link className='food__scroll__buy' to="/food">
+      <button className='food__scroll__buy' onClick={()=>handlerClick()} >
           Ver mas
-      </Link>
+      </button>
     </div>
   );
 };
