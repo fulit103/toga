@@ -16,10 +16,13 @@ const FoodPage = (props) => {
     <div className='body'>
       <div className='container_recipe'>
         <div className='container_recipe__header'>
-          <div className='container_recipe__back'>
-            <Link to='/'>
-              <img src={back} alt='' />
-            </Link>
+          <div className='recipe_header_m'>
+            <div className='Arrow__back_recipe'>
+              <Link to='/'>
+                <img src={back} alt='' />
+              </Link>
+            </div>
+            <div className='recipe_title' />
           </div>
           <div className='main__food  picture'>
             <img src={pizza} alt='pic_recipe' width='80%' />
@@ -48,13 +51,14 @@ const FoodPage = (props) => {
               className='stars'
               count={5}
               size={24}
-              color2='#ffd700'
+              color2='#50d0e3'
+              // '#ffd700'
             />
           </div>
 
           <div className='inf-box instructions'>
             <Tabs>
-              <TabList>
+              <TabList className='.react-tabs__tab-list'>
                 <Tab>Ingredientes</Tab>
                 <Tab>Instrucciones</Tab>
                 <Tab>Inf. Nutricional</Tab>
