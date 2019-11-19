@@ -8,6 +8,7 @@ import plus from '../assets/static/items/plus.png';
 import less from '../assets/static/items/less.png';
 import Plato from '../assets/static/items/plato-1.png';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class ShoppingCart extends React.Component {
   constructor(props, context) {
@@ -20,6 +21,7 @@ class ShoppingCart extends React.Component {
   }
 
   render() {
+    const {ingredients} = this.props;
     return (
       <div className='screen'>
         <div className='order__title'>
@@ -46,61 +48,21 @@ class ShoppingCart extends React.Component {
           <div className='order__list__title'>
             <h2>Ingredientes</h2>
           </div>
-          <div className='item'>
-            <div className='pic__item'>
-              <img src={Plato} alt='' />
-              <div className='name__item'>
-                <p>Pizza</p>
+          {ingredients.map(
+            (item) => (
+              <div className='item'>
+                <div className='pic__item'>
+                  <img src={Plato} alt='' />
+                  <div className='name__item'>
+                    <p>{item.nombre}</p>
+                  </div>
+                </div>
+                <div className='price'>
+                  <p>${item.valor}</p>
+                </div>
               </div>
-            </div>
-            <div className='price'>
-              <p>$12.000</p>
-            </div>
-          </div>
-          <div className='item'>
-            <div className='pic__item'>
-              <img src={Plato} alt='' />
-              <div className='name__item'>
-                <p>Pizza</p>
-              </div>
-            </div>
-            <div className='price'>
-              <p>$12.000</p>
-            </div>
-          </div>
-          <div className='item'>
-            <div className='pic__item'>
-              <img src={Plato} alt='' />
-              <div className='name__item'>
-                <p>Pizza</p>
-              </div>
-            </div>
-            <div className='price'>
-              <p>$12.000</p>
-            </div>
-          </div>
-          <div className='item'>
-            <div className='pic__item'>
-              <img src={Plato} alt='' />
-              <div className='name__item'>
-                <p>Pizza</p>
-              </div>
-            </div>
-            <div className='price'>
-              <p>$12.000</p>
-            </div>
-          </div>
-          <div className='item'>
-            <div className='pic__item'>
-              <img src={Plato} alt='' />
-              <div className='name__item'>
-                <p>Pizza</p>
-              </div>
-            </div>
-            <div className='price'>
-              <p>$12.000</p>
-            </div>
-          </div>
+            )
+          )}
           <div className='total'>
             <div className='total__items'>
               <div className='total__item--number'>
@@ -122,4 +84,10 @@ class ShoppingCart extends React.Component {
   }
 };
 
-export default withRouter(ShoppingCart);
+const mapStateToProps = (state) => {
+  return {    
+    ingredients: state.shopping_cart,
+  };
+};
+
+export default connect(mapStateToProps, null)(withRouter(ShoppingCart));

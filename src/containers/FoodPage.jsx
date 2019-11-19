@@ -10,13 +10,16 @@ import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
 import pizza from '../assets/static/recipe/pizza.png';
 import back from '../assets/static/items/back.png';
-
+import { connect } from 'react-redux';
+import { setShoppingCart } from '../actions/index'
 
 const FoodPage = (props) => {
   let history = useHistory();
+  const {food} = props;
 
   const handlerClick = () => {
-    history.push(`/food/1/shop`)
+    props.setShoppingCart(food.id)
+    history.push(`/food/${food.id}/shop`)
   }
 
   return (
@@ -51,9 +54,9 @@ const FoodPage = (props) => {
         <div className='food-info'>
           <div className='recipe_title'>
             <div className='recipe_title'>
-              <h1>Pizza</h1>
+              <h1>{food.title}</h1>
             </div>
-            <label>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones.</label>
+            <label>{food.description}</label>
             <ReactStars
               className='stars'
               count={5}
@@ -105,4 +108,14 @@ const FoodPage = (props) => {
   );
 };
 
-export default FoodPage;
+const mapStateToProps = (state) => {
+  return {    
+    food: state.food_selected,
+  };
+};
+
+const mapDispatchToProps = {
+  setShoppingCart 
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(FoodPage);
