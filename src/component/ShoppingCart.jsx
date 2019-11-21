@@ -6,28 +6,8 @@ import '../assets/style/components/ShoppingCart.scss';
 import back from '../assets/static/items/back.png';
 import plus from '../assets/static/items/plus.png';
 import less from '../assets/static/items/less.png';
-import Plato from '../assets/static/items/plato-1.png';
-import Item from './Item_shop.jsx';
 
-// class ShoppingCart extends React.Component {
-//   constructor(props, context) {
-//     super(props, context);
-//   }
-
-//   redirectToAddress() {
-//     console.log('address');
-//     this.props.history.push('/adress');
-//   }
-
-const items = ({ children }) => {
-  return (
-    <>
-      {children}
-    </>
-  );
-};
-
-const ShoppingCart = () => {
+const ShoppingCart = ({ children }) => {
   return (
     <div className='screen'>
       <div className='order__title'>
@@ -43,20 +23,18 @@ const ShoppingCart = () => {
       <div className='orden__list'>
         <div className='order__list_numerpeople'>
           <div className='personas'>
-            <p># de Personas</p>
+            <p>Número de Personas</p>
           </div>
           <div className='add__people'>
             <img src={plus} alt='mas' />
-            <input type='number' name='' id='' />
+            <p>    1      </p>
             <img src={less} alt='menos' />
           </div>
         </div>
         <div className='order__list__title'>
           <h2>Ingredientes</h2>
         </div>
-        <Items>
-          <Item />
-        </Items>
+        {children}
         <div className='total'>
           <div className='total__items'>
             <div className='total__item--number'>
@@ -69,12 +47,14 @@ const ShoppingCart = () => {
         </div>
       </div>
       <div className='button__want'>
-        <button className='button__buy' onClick={this.redirectToAddress.bind(this)}>
-            ¡Lo quiero!
-        </button>
+        <Link className='button__buy' to='/adress'>
+              ¡Lo quiero!
+        </Link>
       </div>
     </div>
   );
 };
 
 export default (ShoppingCart);
+
+//
