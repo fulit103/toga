@@ -47,7 +47,7 @@ const ShoppingCart = ({ children }) => {
         </div>
       </div>
       <div className='button__want'>
-        <Link className='button__buy' to='/adress'>
+        <Link className='button__buy' to='/address'>
               ¡Lo quiero!
         </Link>
       </div>
