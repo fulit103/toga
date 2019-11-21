@@ -1,4 +1,5 @@
 import React from 'react';
+import Cards from 'react-credit-cards';
 import { Link } from 'react-router-dom';
 import '../assets/style/components/CreditCard.scss';
 
