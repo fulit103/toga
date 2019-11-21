@@ -4,7 +4,7 @@ import '../assets/style/components/stepItem.scss';
 import back from '../assets/static/items/back.png';
 import pizza from '../assets/static/recipe/pizza.png';
 
-const StepItem = () => {
+const StepItem = (props) => {
   return (
     <div className='container'>
       <div className='header_m'>
