@@ -2,17 +2,27 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import ReactStars from 'react-stars';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // eslint-disable-next-line import/no-unresolved
 import Like from '../assets/static/items/corazon.png';
 import pizza from '../assets/static/recipe/pizza.png';
 import back from '../assets/static/items/back.png';
+import { connect } from 'react-redux';
+import { setShoppingCart } from '../actions/index'
 
 import '../assets/style/components/foodpage.scss';
 import 'react-tabs/style/react-tabs.css';
 
 const FoodPage = (props) => {
+  let history = useHistory();
+  const {food} = props;
+
+  const handlerClick = () => {
+    props.setShoppingCart(food.id)
+    history.push(`/food/${food.id}/shop`)
+  }
+
   return (
     <div className='body'>
       <div className='container_recipe'>
@@ -45,9 +55,9 @@ const FoodPage = (props) => {
         <div className='food-info'>
           <div className='recipe_title'>
             <div className='recipe_title'>
-              <h1>Pizza</h1>
+              <h1>{food.title}</h1>
             </div>
-            <label>La mejor forma de hacer pizza en casa es hacerla sin complicaciones, sin prisas ni preocupaciones.</label>
+            <label>{food.description}</label>
             <ReactStars
               className='stars'
               count={5}
@@ -87,11 +97,11 @@ const FoodPage = (props) => {
           </div>
 
           <div className='div-button-buy'>
-            <Link to='/shop'>
-              <button className='button-primary'>
+            
+            <button className='button-primary' onClick={()=>handlerClick()}>
               Comprar Ingredientes
-              </button>
-            </Link>
+            </button>
+            
           </div>
         </div>
       </div>
@@ -99,4 +109,14 @@ const FoodPage = (props) => {
   );
 };
 
-export default FoodPage;
+const mapStateToProps = (state) => {
+  return {    
+    food: state.food_selected,
+  };
+};
+
+const mapDispatchToProps = {
+  setShoppingCart 
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(FoodPage);
