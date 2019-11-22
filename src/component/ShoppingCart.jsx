@@ -11,7 +11,7 @@ const ShoppingCart = ({ children }) => {
   return (
     <div className='screen'>
       <div className='order__title'>
-        <div className='Arrow__back'>
+        <div className='Arrow__back_s'>
           <Link to='/food'>
             <img src={back} alt='' />
           </Link>
