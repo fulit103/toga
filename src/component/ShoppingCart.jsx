@@ -8,7 +8,6 @@ import plus from '../assets/static/items/plus.png';
 import less from '../assets/static/items/less.png';
 import Plato from '../assets/static/items/plato-1.png';
 import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 class ShoppingCart extends React.Component {
   constructor(props, context) {
@@ -21,7 +20,7 @@ class ShoppingCart extends React.Component {
   }
 
   render() {
-    const {ingredients} = this.props;
+    const { children} = this.props;
     return (
       <div className='screen'>
         <div className='order__title'>
@@ -58,17 +57,7 @@ class ShoppingCart extends React.Component {
                 <p>$65.000</p>
               </div>
             </div>
-          </div>
-          <div className='total'>
-            <div className='total__items'>
-              <div className='total__item--number'>
-                <h3> Total </h3>
-              </div>
-              <div className='total__item--price'>
-                <p>$65.000</p>
-              </div>
-            </div>
-          </div>
+          </div>        
         </div>
         <div className='button__want'>
           <button className='button__buy' onClick={ ()=>this.redirectToAddress() }>
@@ -76,15 +65,9 @@ class ShoppingCart extends React.Component {
           </button>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
-const mapStateToProps = (state) => {
-  return {    
-    ingredients: state.shopping_cart,
-  };
-};
-
-export default connect(mapStateToProps, null)(withRouter(ShoppingCart));
+export default withRouter(ShoppingCart);
 

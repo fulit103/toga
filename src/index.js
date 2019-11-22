@@ -1,3 +1,4 @@
+//import "@babel/polyfill";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -6,6 +7,10 @@ import App from './router/App';
 import reducer from './reducers';
 
 const initialState = {
+  "home_filter": {
+    "kind": -1,
+    "text_search": ""  
+  },
   'foods': [
     {
       'id': 1,
@@ -91,17 +96,17 @@ const initialState = {
   ],
   'kinds': [
     {
-      'id': 1,
+      '_id': 1,
       'name': 'chocolates',
       'img': '',
     },
     {
-      'id': 2,
+      '_id': 2,
       'name': 'empanadas',
       'img': '',
     },
     {
-      'id': 3,
+      '_id': 3,
       'name': 'arepas',
       'img': '',
     },

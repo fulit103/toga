@@ -8,7 +8,7 @@ import NoFound from '../containers/NoFound';
 import Layout from '../component/Layout';
 import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
-import ShoppingCart from '../containers/Shop';
+import Shop from '../containers/Shop';
 import Step from '../component/Step';
 import pay from '../component/CreditCard';
 import Delivery from '../containers/Delivery';
@@ -21,7 +21,7 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/food/:id' component={FoodPage} />
-        <Route exact path='/food/:id/shop' component={ShoppingCart} />
+        <Route exact path='/food/:id/shop' component={Shop} />
         <Route exact path='/address' component={PageAddress} />        
         <Route exact path='/step' component={Step} />
         <Route exact path='/pay' component={pay} />

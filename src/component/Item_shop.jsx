@@ -5,6 +5,7 @@ import Plato from '../assets/static/items/plato-1.png';
 import '../assets/style/components/ShoppingCart.scss';
 
 const itemShop = (props) => {
+  const {nombre, valor} = props;
   return (
     <div className='item'>
       <div className='product'>
@@ -12,7 +13,7 @@ const itemShop = (props) => {
           <img src={Plato} alt='' />
         </div>
         <div className='name__item'>
-          <p>Pizza</p>
+          <p>{nombre}</p>
         </div>
       </div>
       <div className='product_price'>
@@ -20,7 +21,7 @@ const itemShop = (props) => {
           <img src={plus} alt='' />
         </div>
         <div className='price'>
-          <p>$12.000</p>
+          <p>${valor}</p>
         </div>
         <div className='less'>
           <img src={less} alt='' />
