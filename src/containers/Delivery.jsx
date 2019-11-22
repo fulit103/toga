@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 import { Link } from 'react-router-dom';
+import back from '../assets/static/items/back.png';
 import '../assets/style/components/Delivery.scss';
 
 const mapStyles = {
@@ -14,7 +15,7 @@ export class PageAddress extends Component {
       <div className='map-container-address'>
         <div className='header'>
           <Link to='/shop' className='atras'>
-            Atras
+            <img src={back} alt='' />
           </Link>
         </div>
         <div className='box__information'>

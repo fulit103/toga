@@ -4,6 +4,10 @@
   margin-bottom: 1.4em;;
 }
 
+.back{
+  margin-top: 10px;
+}
+
 .import{
   display: flex;
   align-items: center;
@@ -66,15 +70,27 @@
   height: 40px;
   border: none;
   border-radius: 20px;
-  padding: 0px 15px;
-  padding-top:10px;
   outline: none;
   font-size: 14px;
   font-weight: bold;
-  width: 80%;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   text-decoration: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_pay_res{
+  margin-top: 20px;
+  align-content: center;
+}
+
+@media screen and (min-width:768px) {
+  .info_creditcard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap:30px;
+  }
 }

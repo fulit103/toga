@@ -1,17 +1,18 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import ReactStars from 'react-stars';
 import { Link, useHistory } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // eslint-disable-next-line import/no-unresolved
-import '../assets/style/components/foodpage.scss';
-import 'react-tabs/style/react-tabs.css';
-import ReactStars from 'react-stars';
 import Like from '../assets/static/items/corazon.png';
 import pizza from '../assets/static/recipe/pizza.png';
 import back from '../assets/static/items/back.png';
 import { connect } from 'react-redux';
 import { setShoppingCart } from '../actions/index'
+
+import '../assets/style/components/foodpage.scss';
+import 'react-tabs/style/react-tabs.css';
 
 const FoodPage = (props) => {
   let history = useHistory();

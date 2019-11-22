@@ -25,7 +25,7 @@ class ShoppingCart extends React.Component {
     return (
       <div className='screen'>
         <div className='order__title'>
-          <div className='Arrow__back'>
+          <div className='Arrow__back_s'>
             <Link to='/food'>
               <img src={back} alt='' />
             </Link>
@@ -37,32 +37,28 @@ class ShoppingCart extends React.Component {
         <div className='orden__list'>
           <div className='order__list_numerpeople'>
             <div className='personas'>
-              <p># de Personas</p>
+              <p>Número de Personas</p>
             </div>
             <div className='add__people'>
               <img src={plus} alt='mas' />
-              <input type='number' name='' id='' />
+              <p>    1      </p>
               <img src={less} alt='menos' />
             </div>
           </div>
           <div className='order__list__title'>
             <h2>Ingredientes</h2>
           </div>
-          {ingredients.map(
-            (item) => (
-              <div className='item'>
-                <div className='pic__item'>
-                  <img src={Plato} alt='' />
-                  <div className='name__item'>
-                    <p>{item.nombre}</p>
-                  </div>
-                </div>
-                <div className='price'>
-                  <p>${item.valor}</p>
-                </div>
+          {children}
+          <div className='total'>
+            <div className='total__items'>
+              <div className='total__item--number'>
+                <h3> Total </h3>
               </div>
-            )
-          )}
+              <div className='total__item--price'>
+                <p>$65.000</p>
+              </div>
+            </div>
+          </div>
           <div className='total'>
             <div className='total__items'>
               <div className='total__item--number'>
@@ -80,8 +76,8 @@ class ShoppingCart extends React.Component {
           </button>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 const mapStateToProps = (state) => {
@@ -91,3 +87,4 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, null)(withRouter(ShoppingCart));
+

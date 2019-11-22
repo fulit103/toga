@@ -8,7 +8,7 @@ import NoFound from '../containers/NoFound';
 import Layout from '../component/Layout';
 import FoodPage from '../containers/FoodPage';
 import PageAddress from '../containers/PageAddress';
-import ShoppingCart from '../component/ShoppingCart';
+import ShoppingCart from '../containers/Shop';
 import Step from '../component/Step';
 import pay from '../component/CreditCard';
 import Delivery from '../containers/Delivery';
